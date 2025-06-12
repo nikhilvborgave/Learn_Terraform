@@ -1,0 +1,17 @@
+create_ec2_instance_web_server/
+├── create_ec2_config/
+│   ├── ec2_config/
+│   │   └── terragrunt.hcl
+│   └── security_group_config/
+│       └── terragrunt.hcl
+└── create_ec2_infra/
+    ├── ec2_infra/
+    │   ├── ec2.tf
+    │   ├── variable.tf
+    │   └── output.tf
+    └── security_group_infra/
+        ├── sg.tf
+        ├── variable.tf
+        └── output.tf
+
+This will create security group & ec2 instance.
