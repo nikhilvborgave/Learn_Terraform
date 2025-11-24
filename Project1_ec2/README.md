@@ -28,7 +28,7 @@ Terraform deploys the following:
 
 ## Project Structure
 
-project-1-basic-ec2/
+project1_ec2/
 │
 ├── main.tf
 ├── variables.tf
