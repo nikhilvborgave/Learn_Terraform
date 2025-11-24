@@ -28,13 +28,14 @@ Terraform deploys the following:
 
 ## Project Structure
 
-project1_ec2/
-│
+```bash
+project-folder/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
-├── user_data.sh
-└── README.md
+└── user_data.sh
+```
+
 
 
 ## How to Deploy
