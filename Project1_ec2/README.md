@@ -13,7 +13,7 @@ The goal of this project is to showcase:
 
 
 ## Architecture
-
+```bash
 Terraform deploys the following:
 
 - **EC2 instance (t2.micro)** running Ubuntu 22.04  
@@ -24,7 +24,7 @@ Terraform deploys the following:
 - **S3 Backend** for remote Terraform state  
 
 [Terraform] → [AWS] → EC2 + Security Group + Nginx Setup
-
+```
 
 ## Project Structure
 
@@ -41,18 +41,22 @@ project-folder/
 ## How to Deploy
 
 ### 1. Initialize Terraform
+```bash
 terraform init
+```
 
-### 2. Validate configuration
-terraform validate
-
-### 3. Preview resources
+### 2. Preview resources
+```bash
 terraform plan
+```
 
-### 4. Deploy infrastructure
+### 3. Deploy infrastructure
+```bash
 terraform apply -auto-approve
+```
 
-### 5. View Outputs
+### 4. View Outputs
+```bash
 Terraform prints:
 - EC2 Instance ID  
 - Public IP  
@@ -60,19 +64,19 @@ Terraform prints:
 - Security Group ID  
 
 Open the public IP in your browser to see the Nginx homepage deployed via user data.
-
+```
 
 ## What This Project Does
-
+```bash
 - Creates a free-tier EC2 instance  
 - Provisions Nginx via user-data  
 - Attaches a minimal Security Group  
 - Stores Terraform state in an S3 bucket (remote backend)  
 - Outputs useful instance information  
-
+```
 
 ## User Data Script
-
+```bash
 The EC2 instance automatically:
 
 - Updates packages  
@@ -82,10 +86,10 @@ The EC2 instance automatically:
 - Creates a custom index.html page  
 
 User data file: user_data.sh
-
+```
 
 ## Terraform Concepts Demonstrated
-
+```bash
 - Providers  
 - Variables  
 - Outputs  
@@ -95,7 +99,7 @@ User data file: user_data.sh
 - Remote state backend  
 - Tags  
 - AWS Ubuntu AMIs  
-
+```
 
 ## Author
 
