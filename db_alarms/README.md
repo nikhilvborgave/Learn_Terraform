@@ -9,10 +9,10 @@ This Terraform script provisions AWS CloudWatch Metric Alarms for an RDS instanc
 
 **Prerequisites**
 
-Terraform >= 1.0
-AWS CLI configured with appropriate credentials
-An existing RDS instance
-An existing SNS topic ARN for alarm notifications
+Terraform >= 1.0\
+AWS CLI configured with appropriate credentials\
+An existing RDS instance\
+An existing SNS topic ARN for alarm notifications\
 
 **Usage**
 
