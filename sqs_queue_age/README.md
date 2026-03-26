@@ -1,36 +1,39 @@
 This Terraform script provisions an AWS CloudWatch Metric Alarm for an SQS queue. It monitors the age of the oldest message in the queue and sends a notification via SNS when the threshold is breached.
 
 **File Structure**
+
+```bash
 .
 ├── sqs_alarm.tf     # CloudWatch alarm resource definition
 ├── variable.tf      # Input variable declarations
 ├── outputs.tf       # Output values after apply
 └── README.md        # Project documentation
+```
 
 **Prerequisites**
 
-Terraform >= 1.0
-AWS CLI configured with appropriate credentials
-An existing SQS queue
+Terraform >= 1.0\
+AWS CLI configured with appropriate credentials\
+An existing SQS queue\
 An existing SNS topic ARN for alarm notifications
 
 
 **Usage**
 
 Initialize Terraform
-```python
+```bash
 terraform init
 ```
 Review the plan
-```python
+```bash
 terraform plan
 ```
 Apply the configuration
-```python
+```bash
 terraform apply
 ```
 Destroy Resources
-```python
+```bash
 terraform destroy
 ```
 
