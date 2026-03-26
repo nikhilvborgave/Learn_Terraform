@@ -4,9 +4,9 @@ This Terraform script provisions an AWS CloudWatch Metric Alarm for an SQS queue
 
 ```bash
 .
-├── sqs_alarm.tf     # CloudWatch alarm resource definition
+├── main.tf     # CloudWatch alarm resource definition
 ├── variable.tf      # Input variable declarations
-├── outputs.tf       # Output values after apply
+├── output.tf       # Output values after apply
 └── README.md        # Project documentation
 ```
 
